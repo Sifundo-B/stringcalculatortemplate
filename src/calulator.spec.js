@@ -4,7 +4,7 @@ let Calculator = require ("./calculator");
 describe("string calculator", function () {
     it("should return 0 if string is empty", function () {
         let calculator = new Calculator();
-        let calculatorResult = calculator.add('');
-        expect(calculatorResult).toBe(0);
+        let calculatorResult = calculator.add(';\n1;2');
+        expect(calculatorResult).toBe(3);
     });
 });
